@@ -1,0 +1,22 @@
+﻿@model examenv3.Models.Emisiune
+
+<form method="post" >
+
+	<label asp-for="@Model.Titlu">Titlu</label><br />
+	<input asp-for="@Model.Titlu" required="true" /><br />
+
+	<label asp-for="@Model.Producator">Produactor</label><br />
+	<input asp-for="@Model.Producator" required="true" /><br />
+
+	<label asp-for="@Model.AnLansare">An Lansare</label><br />
+	<input asp-for="@Model.AnLansare" required="true" /><br />
+
+	<label asp-for="@Model.Gen"> Gen </label><br />
+	<input asp-for="@Model.Gen" required="true" /><br />
+
+	<label asp-for="@Model.CanalId">Canal TV ID</label><br />
+	<select asp-for="@Model.CanalId" asp-items="ViewBag.canaleTV"></select><br />
+	<input type="submit" value="Submit" />
+
+
+</form>
